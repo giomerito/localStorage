@@ -2,31 +2,36 @@
 <html>
 <head>
 	<title>LocalStorage com JavaScript</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
 	<link rel="stylesheet" type="text/css" href="app.css">
-
+	-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/cerulean/bootstrap.min.css" />
 	
 
 </head>
 <body>
-	<h1>localStorage</h1>
+	<div class="container">
+		<div class="form-group">
+			<h1>localStorage</h1>
+			<form id="add-form">
 
-	<form id="add-form">
-		
-		<input type="text" id="name" placeholder="nome"> <br>
-		<button type="submit">Add</button>
+				<input type="text" class="form-control" id="name" placeholder="nome"> <br>
+				<button type="submit" class="btn btn-primary">Add</button>
 
-	</form>
+			</form>
+			<br>
 
-	<table id="list-table">
-		<thead>
-			<th>Name</th>
-			<th>Contact</th>
-			<th colspan="2">Note</th>
-		</thead>
-		
-	</table>
-
+			<table id="list-table" class="table table-striped">
+				<thead>
+					<th>Name</th>
+					<th>Contact</th>
+					<th colspan="2">Note</th>
+				</thead>
+				
+			</table>
+		</div>
+	</div>
 	<script src="app.js"></script>
 	
 </body>

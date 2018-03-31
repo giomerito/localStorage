@@ -62,7 +62,7 @@ $table.addEventListener('click', function(event){
 
 	if(action === 'delete'){		
 		contacts = contacts.filter(function(contact){
-			return contact.ud !== id;
+			return contact.id !== id;
 		});
 		localStorage.setItem('contacts', JSON.stringify(contacts));
 		$row.remove();
